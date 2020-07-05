@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "pal-web-app-975fe": {
+      "hosting": {
+        "palwebapp": [
+          "pal-web-app-975fe"
+        ]
+      }
+    }
+  }
+}
