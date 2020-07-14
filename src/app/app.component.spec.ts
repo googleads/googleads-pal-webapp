@@ -1,11 +1,16 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { AdsLoaderService } from './ads/ads-loader.service';
 
 describe('AppComponent', () => {
+  const adsLoaderServiceSpy = {} as any;
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent
+      ],
+      providers: [
+        {provide: AdsLoaderService, useValue: adsLoaderServiceSpy},
       ],
     }).compileComponents();
   }));

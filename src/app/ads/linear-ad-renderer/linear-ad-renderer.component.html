@@ -1,0 +1,13 @@
+<div [hidden]="hidden" [ngStyle]="{'width.px': width, 'height.px': height}" class="ad">
+    <div style="position: relative" [ngStyle]="{'width.px': width, 'height.px': height}">
+        <video class="ad-element" #adElement (click)="onClick($event)" [ngClass]="{'click-through': hasClickThrough()}">
+            <source *ngIf="mediaFile" [src]="mediaFile.uri.toString()">
+        </video>
+        <div *ngIf="icon" class="icon-container"
+            [ngStyle]="{'width.px': icon.width, 'height.px': icon.height, 'left.px': icon.xPosition === 'left' ? 0 : icon.xPosition === 'right' ? 'auto': icon.xPosition, 'right.px': icon.xPosition === 'right' ? 0 : 'auto', 'top.px': icon.yPosition === 'top' ? 0: icon.yPosition === 'bottom' ? 'auto' : icon.yPosition, 'bottom.px': icon.yPosition === 'bottom' ? 0 : 'auto'}">
+            <img #iconElement [ngStyle]="{'width.px': icon.width, 'height.px': icon.height}"
+                [src]="icon.staticResource.uri.toString()" [ngClass]="{'click-through': true}"
+                (click)="onIconClick($event)" />
+        </div>
+    </div>
+</div>
