@@ -11,6 +11,14 @@ import { CompanionAdRendererComponent } from './companion-ad-renderer/companion-
   declarations: [CompanionAdsDirective, LinearAdsDirective, LinearAdRendererComponent, CompanionAdRendererComponent],
   imports: [
     CommonModule
+  ],
+  entryComponents: [
+    LinearAdRendererComponent,
+    CompanionAdRendererComponent
+  ],
+  exports: [
+    LinearAdsDirective,
+    CompanionAdsDirective
   ]
 })
 export class AdsModule { }

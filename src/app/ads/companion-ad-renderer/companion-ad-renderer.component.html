@@ -1,1 +1,4 @@
-<p>companion-ad-renderer works!</p>
+<div [hidden]="hidden" [ngStyle]="{'width.px': width, 'height.px': height}" class="ad">
+    <img *ngIf="companionUrl" #adElement class="ad-element" [ngStyle]="{'width.px': width, 'height.px': height}" [src]="companionUrl" [ngClass]="{'click-through': hasClickThrough()}" (click)="onClick($event)"/>
+ </div>
+

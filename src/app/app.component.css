@@ -1,0 +1,103 @@
+.tag-card {
+  width: 100%;
+}
+
+.tag-form {
+  width: 80%;
+  display: inline-block;
+}
+
+.tag-input {
+  width: 100%;
+}
+
+.tag-button {
+  margin-left: 8px;
+  display: inline-block;
+}
+
+.companion-card {
+  align-self: flex-start;
+  background: pink;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+console-card {
+  align-self: flex-start;
+  width: 90%;
+}
+
+.video-container {
+  position: relative;
+  width: 640px;
+  height:360px;
+}
+
+/* layout */
+main {
+  margin: auto;
+  max-width: 1280px;
+  min-width: 960px;
+}
+
+header {
+  margin-bottom: 2em;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+.ad-section {
+  display: flex;
+}
+
+.full-width-input {
+  width: 100%;
+}
+
+.forty-width-input {
+  width: 40%;
+}
+
+.video-container {
+  max-width: 640px;
+  margin-right: 1em;
+}
+
+.companion-ad-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 300px;
+  border: 3px solid green;
+}
+
+.ad-settings .mat-form-field + .mat-form-field {
+  margin-left: 1.25em;
+}
+
+.ad-settings .mat-checkbox + .mat-checkbox {
+  margin-left: 1.25em;
+}
+
+.pal-enabled-container {
+  margin-bottom: 1.25em;
+}
+
+.ad-settings .expansion-panel-container {
+  margin-bottom: 1.25em;
+}
+
+.toolbar-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}

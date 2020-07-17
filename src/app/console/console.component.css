@@ -1,0 +1,18 @@
+.log-window {
+    height: 200px;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    white-space: nowrap;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    padding: 0.5em;
+  }
+  
+  .log-window span {
+    display: block;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+  }
+  

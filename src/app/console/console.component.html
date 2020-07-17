@@ -1,0 +1,18 @@
+<div>
+    <h3 class="mat-title">
+      Console
+    </h3>
+  </div>
+  <div class="log-window">
+    <ng-container *ngFor="let log of logs">
+      <ng-container *ngIf="log.linkText; else thenBlock">
+        <a href="{{log.href}}" target="_blank" rel="noopener">
+          <span class="mat-body">{{ log.message }} {{log.linkText}}</span>
+        </a>
+      </ng-container>
+      <ng-template #thenBlock>
+        <span class="mat-body">{{ log.message }}</span>
+      </ng-template>
+    </ng-container>
+  </div>
+  
