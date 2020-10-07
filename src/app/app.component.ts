@@ -1,3 +1,19 @@
+/**
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 import {HttpClient} from '@angular/common/http';
 import {AfterViewInit, Component, ViewChild} from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
@@ -47,7 +63,7 @@ export class AppComponent {
   constructor(private adsLoader: AdsLoaderService, private titleService: Title) {
     this.tagForm = new FormGroup({
       'tagUrl': new FormControl(
-          'https://pubads.g.doubleclick.net/gampad/ads?iu=/6075/pal_taskforce/pg&description_url=http%3A%2F%2Fkorgpalwebdev1.googleplex.com&url=http%3A%2F%2Fkorgpalwebdev1.googleplex.com&tfcd=0&npa=0&sz=640x480&ciu_szs=300x250&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=12345&nofb=1&ad_rule=0&wta=1'),
+          'https://pubads.g.doubleclick.net/gampad/ads?iu=/6075/pal_taskforce/pg&description_url=http%3A%2F%2Fwww.google.com&url=http%3A%2F%2Fwww.google.com&tfcd=0&npa=0&sz=640x480&ciu_szs=300x250&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=12345&nofb=1&ad_rule=0&wta=1'),
       'video': new FormControl(
           'https://bitmovin-a.akamaihd.net/content/MI201109210084_1/mpds/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.mpd'),
       'palEnabled': new FormControl(true),

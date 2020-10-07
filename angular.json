@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "palwebapp"
+  "defaultProject": "palwebapp",
+  "cli": {
+    "analytics": "b3519d8f-6fc5-4480-ab95-4da0aeb4d2ed"
+  }
 }
