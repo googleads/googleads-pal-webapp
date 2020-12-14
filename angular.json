@@ -123,8 +123,12 @@
           }
         },
         "deploy": {
-          "builder": "@angular/fire:deploy",
-          "options": {}
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "repo": "git@github.com:googleads/googleads-pal-webapp.git",
+            "baseHref": "/googleads-pal-webapp/",
+            "noSilent": true
+          }
         }
       }
     }
